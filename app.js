@@ -1,21 +1,14 @@
 (function () {
-'use script';
+'use scrict';
 
-var numbers = [];
-for (var i = 0; i < 10; i++) {
-  numbers[i] = i;
-}
+var list = ['a', 'b', 'c', 'aa', 'ab', 'ac', 'bb', 'bc', 'cc', 'aaa', 'bbb', 'ccc'];
 
-angular.module('repeatApp', [])
-.controller('repeatAppController', RepeatController);
+angular.module('listApp', [])
+.controller('listAppController', ListController);
 
-RepeatController.$inject = ['$scope'];
-function RepeatController($scope) {
-  $scope.numbers = numbers;
-
-  $scope.addToList = function () {
-    $scope.numbers.push($scope.new);
-  };
+ListController.$inject = ['$scope'];
+function ListController($scope) {
+  $scope.list = list;
 }
 
 })();

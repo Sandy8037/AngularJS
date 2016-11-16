@@ -6,9 +6,9 @@
     <script src="app.js" charset="utf-8"></script>
     <title>Search List</title>
   </head>
-  <body ng-app="listApp">
+  <body ng-app="searchApp">
     <h1>Search List</h1>
-    <div ng-controller="listAppController">
+    <div ng-controller="searchAppController">
       <input type="text" ng-model="search">
       <ul>
         <li ng-repeat="items in list | filter : search">{{items}}</li>
