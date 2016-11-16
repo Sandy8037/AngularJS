@@ -11,7 +11,7 @@
     <div ng-controller="repeatAppController">
       <input type="text" ng-model="numbers[0]">
       <ul>
-        <li ng-repeat=" items in numbers">{{items}}</li>
+        <li ng-repeat=" items in numbers">{{$index + 1}} . {{items}}</li>
       </ul>
       <input type="text" ng-model="new"><br>
       <button ng-click="addToList()">Add to list</button>
