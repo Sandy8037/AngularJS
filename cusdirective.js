@@ -10,6 +10,7 @@ angular.module('ShoppingListDirectiveApp', [])
 
 function ListItem() {
   var ddo = {
+    restrict: 'AE',
     templateUrl: 'listItem.html'
   };
 
