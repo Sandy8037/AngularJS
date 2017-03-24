@@ -40,7 +40,7 @@ StringCompression.prototype = {
 };
 
 var newCompression = new StringCompression();
-newCompression.add('aaabb');
+newCompression.add('ab');
 newCompression.compression();
 
 })();
