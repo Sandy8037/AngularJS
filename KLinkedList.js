@@ -69,6 +69,6 @@ sll.push(2);
 sll.push(3);
 sll.push(4);
 
-console.log(sll.kthFromEnd(2));
+console.log(sll.kthFromEnd(1));
 
 })();
